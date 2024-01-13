@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const hasAnimatedClass = resumeWrap.classList.contains("animated");
 
       // Jika elemen ada di dalam viewport
-      if (boxTop < windowHeight * 0.8 && !hasAnimatedClass) {
+      if (boxTop < windowHeight * 1.2 && !hasAnimatedClass) {
         resumeWrap.classList.add("animated");
         resumeWrap.dataset.animated = "true"; // Menandai bahwa animasi sudah dimainkan
       } else if (boxTop > windowHeight && hasAnimatedClass) {
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const windowHeight = window.innerHeight;
       const hasAnimatedClass = servicesItem.classList.contains("animated");
 
-      if (boxTop < windowHeight * 0.8 && !hasAnimatedClass) {
+      if (boxTop < windowHeight * 1.2 && !hasAnimatedClass) {
         servicesItem.classList.add("animated");
         servicesItem.dataset.animated = "true";
       } else if (boxTop > windowHeight && hasAnimatedClass) {
