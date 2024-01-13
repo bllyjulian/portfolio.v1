@@ -305,7 +305,6 @@ header .container {
 }
 .hero img {
   text-align: right;
-  height: 100%;
 }
 @media screen and (max-width: 768px){
   .hero_content h4 {
@@ -333,6 +332,7 @@ header .container {
   }
   .hero_img {
     text-align: center;
+    width: 100%;
   }
 }
 /* about */
