@@ -647,7 +647,6 @@ header .container {
    }
    .portfolio_wrap img {
     border-radius: 10px;
-    height: 100%;
    }
    .portfolio_wrap::before {
     content: '';
@@ -723,6 +722,9 @@ header .container {
   }
   .portfolio_filters li {
     font-size: 16px;
+  }
+  .portfolio_wrap img {
+    width: 100%;
   }
 }
 
