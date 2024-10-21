@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <!-- main files css -->
   <link rel="stylesheet" href="./asset/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -63,7 +67,7 @@
             <a href="https://github.com/bllyjulian" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
             <a href="https://instagram.com/bllyy___" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
             <a href="https://wa.me/6282233236128?text=Halo%2C%20Billy" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
-            <a href="https://open.spotify.com/user/31a3d5ojnue5as6wxjs5zyo6wcfq?si=f956b379fd5643ef" target="_blank"><i class="bx bxl-spotify"></i></a>
+            <a href="https://open.spotify.com/user/31zuutg3qv54o7nnqvbetngva4eu?si=JMqlAN_CTbyQhwx0zCNdwA&utm_source=copy-link" target="_blank"><i class="bx bxl-spotify"></i></a>
            </div>
            <a href="#about" class="btn">
             Read More
@@ -254,7 +258,7 @@
                 <span>0%</span>
               </div>
               <div class="progress">
-                <div class="progress_bar" style="width: 0%;" data-progress="78"></div>
+                <div class="progress_bar" style="width: 0%;" data-progress="84"></div>
               </div>
             </div>
             <div class="progressBox">
@@ -272,7 +276,7 @@
                 <span>0%</span>
               </div>
               <div class="progress">
-                <div class="progress_bar" style="width: 0%;" data-progress="90"></div>
+                <div class="progress_bar" style="width: 0%;" data-progress="96"></div>
               </div>
             </div>
             <div class="progressBox">
@@ -281,7 +285,25 @@
                 <span>0%</span>
               </div>
               <div class="progress">
-                <div class="progress_bar" style="width: 0%;" data-progress="65"></div>
+                <div class="progress_bar" style="width: 0%;" data-progress="78"></div>
+              </div>
+            </div>
+            <div class="progressBox">
+              <div class="progress_name">
+                <span>Python</span>
+                <span>0%</span>
+              </div>
+              <div class="progress">
+                <div class="progress_bar" style="width: 0%;" data-progress="79"></div>
+              </div>
+            </div>
+            <div class="progressBox">
+              <div class="progress_name">
+                <span>Laravel</span>
+                <span>0%</span>
+              </div>
+              <div class="progress">
+                <div class="progress_bar" style="width: 0%;" data-progress="87"></div>
               </div>
             </div>
           </div>
@@ -337,19 +359,24 @@
           <li data-filter=".filter-card">Prototype</li>
         </ul>
         <div class="portfolio_wrap-container">
+          
           <div class="portfolio_item filter-web">
             <div class="portfolio_wrap">
-              <img src="./image/project/W-admin.png" alt="" class="img-fluid">
+              <img src="./image/project/W-admin.png" alt="Admin Website" class="img-fluid">
               <div class="portfolio_info">
                 <h4>Admin Website</h4>
                 <p>Website</p>
                 <div class="portfolio_links">
-                  <a href="https://codingcamp.myhost.id/loginpage/login" target="_blank"><i class="uil uil-plus"></i></a>
-                  <a href="https://codingcamp.myhost.id/loginpage/login" target="_blank"><i class="uil uil-link"></i></a>
+                  <a href="#" data-toggle="modal" data-target="#portfolioModal" onclick="openModal(['./image/project/W-event.png', './image/project/W-challenge.png', './image/project/W-akun.png'])">
+                    <i class="uil uil-plus"></i>
+                  </a>
+                  <a href="#" target="_blank"><i class="uil uil-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
+
+          
           <div class="portfolio_item filter-web">
             <div class="portfolio_wrap">
               <img src="./image/project/W-LP.png" alt="" class="img-fluid">
@@ -1145,11 +1172,48 @@
         </div>
       </div>
     </footer>
+    <!-- Modal Structure -->
+<div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModalLabel">Portfolio Item</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" id="carouselContent">
+            <!-- Images will be injected here -->
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   </main>
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
     }
+    function openModal(images) {
+  const carouselContent = document.getElementById('carouselContent');
+  carouselContent.innerHTML = images.map((img, index) => `
+    <div class="carousel-item ${index === 0 ? 'active' : ''}">
+      <img src="${img}" class="d-block w-100" alt="...">
+    </div>
+  `).join('');
+}
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>

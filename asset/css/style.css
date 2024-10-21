@@ -1020,3 +1020,28 @@ textarea:focus {
   padding: 20px;
   color: #dbdbdb;
 }  
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.7); /* Black color with some transparency */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill="%23000" d="M4.03 0L0 4.03 4.03 8l.69-.72L1.4 4l3.32-3.28z" /%3E%3C/svg%3E'); /* Black arrow */
+}
+
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill="%23000" d="M3.72 0L8 4.03 3.72 8l-.72-.72L6.58 4 3 0.72z" /%3E%3C/svg%3E'); /* Black arrow */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Adjust as needed */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; /* Ensure background is transparent */
+}
